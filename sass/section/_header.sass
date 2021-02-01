@@ -1,0 +1,47 @@
+.header
+    width: 100%
+    &-secondary
+        color: $white
+        background-color: $sub-header
+        &__wrapper
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            min-height: 55px
+        &__link
+            color: $white
+    &-main
+        &__wrapper
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding-top: 40px
+        &__logo
+            flex-grow: 1
+        &__date
+            padding-right: 30px
+            color: $grey-text
+        &__time-container
+            margin-right: 30px 
+        &__weather-container
+            padding-right: 40px
+    &-nav
+        &__wrapper
+            margin: 35px 0
+            width: 90%
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 0
+    &__item
+        list-style: none
+        &:not(:first-child):before
+            content: '/'
+            margin-right: 15px
+            color: $menu-sticks
+            
+    &__link
+        text-decoration: none
+        color: #000000
